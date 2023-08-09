@@ -1,0 +1,140 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 18px;
+  font-weight: 400;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.heading {
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  color: #4520ab;
+  letter-spacing: -0.07em;
+  margin-top: 44px;
+}
+
+.searchBardiv {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 44px;
+}
+#searchBar {
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 14px;
+  width: 485px;
+  height: 56px;
+  padding-left: 15px;
+  margin-top: 44px;
+  color: rgb(65, 5, 85);
+  font-family: "Dosis", sans-serif;
+}
+
+#add {
+  position: absolute;
+  background-color: black;
+  color: white;
+  width: 107px;
+  height: 38px;
+  font-family: "IBM Plex Mono", monospace;
+  border-radius: 8px;
+  font-weight: 400;
+  top: 55px;
+  right: 15px;
+}
+.dictionaryTab {
+  border-style: solid;
+  border-color: rgba(177, 99, 99, 0.832);
+  border-width: 2px;
+  border-radius: 5px;
+  min-height: 40px;
+}
+
+.dictionaryLine {
+  display: flex;
+  flex-direction: row;
+}
+
+.cellLeft,
+.cellRight {
+  width: 226px;
+  height: 100%;
+  padding-left: 20px;
+  padding-top: 8px;
+  vertical-align: middle;
+}
+
+.cellLeft {
+  background-color: #f0f0f0;
+  border-style: solid;
+  border-color: black;
+  height: 32px;
+  border-width: 0px 2px 1px 0px;
+}
+.close,
+.closeIcon {
+  background-color: rgb(0, 0, 0, 0);
+}
+.cellRight {
+  background-color: rgb(0, 0, 0, 0.1);
+  vertical-align: middle;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-style: solid;
+  border-color: black;
+  height: 32px;
+  border-width: 0px 0px 1px 0px;
+}
+.closeIcon,
+#cleareAll {
+  border-radius: 11px;
+}
+.closeIcon {
+  padding-top: 20spx;
+  padding-right: 8px;
+}
+.translateDiv {
+  vertical-align: middle;
+  padding-top: 8px;
+}
+.clearButton {
+  margin-top: 44px;
+  width: 176px;
+  height: 38px;
+  background-color: #adadad;
+
+  padding: 6px 10px 8px 10px;
+  border-radius: 8px;
+}
+.index {
+  display: inline-block;
+  padding-right: 15px;
+}
+
+#cleareAll {
+  padding-right: 7px;
+}
+
+/* Под телефон  */
+@media (max-width: 767px) {
+  .cellLeft,
+  .cellRight {
+    width: 148;
+    height: 35px;
+    padding-left: 20px;
+    padding-top: 5px;
+    vertical-align: middle;
+  }
+}
